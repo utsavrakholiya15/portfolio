@@ -1,0 +1,26 @@
+@import '../../../scss/main.scss';
+
+.skills{
+    margin-top: 100px;
+    padding-top: 100px;
+    border-top: 1px solid white;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:35px 90px;
+    .skills-item{
+        h2{
+            @include kanit;
+            letter-spacing: .5px;
+            font-weight: 400;
+            font-size: 36px;
+        }
+        p{
+            color: grey;
+            @include kanit;
+            margin-top: 10px;
+            font-size: 15px;
+            line-height: 19px;
+        }
+    }
+}

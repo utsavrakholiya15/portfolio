@@ -1,0 +1,102 @@
+@import "../../../scss/main.scss";
+
+.hb {
+  background: var(--primary-black);
+  height: calc(100vh - 70px);
+}
+
+.hb-bg-grid {
+  display: grid;
+  grid-template-columns: 54% 1fr;
+  height: 100%;
+  .hb-bg-black {
+    background: var(--primary-black);
+  }
+  .hb-bg-grey {
+    background: var(--primary-grey);
+    display: flex;align-items: center;
+    justify-content: center;
+    .hb-bg-grey-img{
+      transform: translateY(-45px);
+      border: 2px solid rgba(128, 128, 128, 0.102);
+      border-radius: 50%;
+      padding: 20px;
+      svg{
+        width: 150px;
+        height: 150px;
+        fill: grey;
+        opacity: 0.2;
+      }
+    }
+  }
+}
+
+.hb-relative {
+  position: relative;
+  height: 100%;
+}
+.hb-data {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  // background: rgba(255, 255, 255, 0.248);
+  padding:110px 20px;
+  .hb-data-align {
+    h2 {
+      font-size: 58px;
+      line-height: 60px;
+      word-spacing: 1px;
+      letter-spacing: 1px;
+      font-weight: 400;
+      color: white;
+      @include kanit;
+      margin-top: 20px;
+      span {
+        position: relative;
+        &:before {
+          content: "";
+          height: 3px;
+          width: 98%;
+          margin: 0 auto;
+          position: absolute;
+          bottom: 8px;
+          left: 10px;
+          background: var(--primary-green);
+        }
+      }
+    }
+    p {
+      margin-top: 50px;
+      max-width: 300px;
+      font-size: 15px;
+      color: grey;
+      @include kanit;
+    }
+    button {
+      margin-top: 40px;
+      padding: 6px 10px;
+      background: var(--primary-black);
+      color: white;
+      border: none;
+      font-size: 12px;
+      word-spacing: 2px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      @include kanit;
+      font-weight: 400;
+      text-transform: uppercase;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "";
+        bottom: -2px;
+        left: 8px;
+        width: 85%;
+        height: 2px;
+        background: var(--primary-green);
+      }
+    }
+  }
+}

@@ -5,6 +5,12 @@ import siroImg from "../../../assets/IMAGEs/siro-img.png";
 import bofImg from "../../../assets/IMAGEs/bof-img.png";
 import cleanicImg from "../../../assets/IMAGEs/cleanic-img.png";
 export default function Websites() {
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight, // Scroll to the bottom of the page
+      behavior: "smooth", // Smooth scrolling
+    });
+  };
   const handleOnUrl = (event) => {
     const url = event.currentTarget.getAttribute("data-url");
     if (url) {
@@ -33,7 +39,7 @@ export default function Websites() {
         <div className="websites">
           <div className="websites-title">
             <h2>Websites</h2>
-            <button>Contact me</button>
+            <button onClick={scrollToBottom} >Contact me</button>
           </div>
           <div className="websites-grid">
             <WebsiteItem

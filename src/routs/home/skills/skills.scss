@@ -1,26 +1,54 @@
-@import '../../../scss/main.scss';
+@import "../../../scss/main.scss";
 
-.skills{
-    margin-top: 100px;
-    padding-top: 100px;
-    border-top: 1px solid white;
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:35px 90px;
-    .skills-item{
-        h2{
-            @include kanit;
-            letter-spacing: .5px;
-            font-weight: 400;
-            font-size: 36px;
-        }
-        p{
-            color: grey;
-            @include kanit;
-            margin-top: 10px;
-            font-size: 15px;
-            line-height: 19px;
-        }
+.skills-parent {
+  @media (max-width: 768px) {
+    padding-inline: 20px;
+  }
+}
+.skills {
+  margin-top: 100px;
+  padding-top: 100px;
+  border-top: 1px solid white;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px 90px;
+  @media (max-width: 1024px) {
+    margin-inline: auto;
+    max-width: 768px;
+  }
+  @media (max-width: 768px) {
+    max-width: 576px;
+    padding-inline: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 40px;
+  }
+  .skills-item {
+    h2 {
+      @include kanit;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+      font-size: 36px;
+
+      @media (max-width: 768px) {
+        font-size: 30px;
+      }
+      @media (max-width: 576px) {
+        font-size: 24px;
+      }
     }
+    p {
+      color: grey;
+      @include kanit;
+      margin-top: 10px;
+      font-size: 15px;
+      line-height: 19px;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+      @media (max-width: 576px) {
+        font-size: 12px;
+      }
+    }
+  }
 }

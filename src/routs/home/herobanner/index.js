@@ -2,6 +2,12 @@ import React from "react";
 import "./herobanner.scss";
 import { IoLogoReact } from "react-icons/io5";
 export default function Herobanner() {
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight, // Scroll to the bottom of the page
+      behavior: 'smooth', // Smooth scrolling
+    });
+  };
   return (
     <div className="hb">
       <div className="container h-full">
@@ -26,7 +32,7 @@ export default function Herobanner() {
                 Based in Surat,I'm a frontend developer passionate about
                 building accessible web apps that users love!
               </p>
-              <button>Contact Me</button>
+              <button onClick={scrollToBottom}>Contact Me</button>
             </div>
           </div>
         </div>

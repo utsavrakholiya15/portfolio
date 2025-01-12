@@ -3,6 +3,14 @@
 .hb {
   background: var(--primary-black);
   height: calc(100vh - 70px);
+  @media (max-width: 1024px) {
+    margin: 0 auto;
+    max-width: 768px;
+  }
+  @media (max-width: 768px) {
+    max-width: 576px;
+    padding-inline: 20px;
+  }
 }
 
 .hb-bg-grid {
@@ -14,18 +22,28 @@
   }
   .hb-bg-grey {
     background: var(--primary-grey);
-    display: flex;align-items: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    .hb-bg-grey-img{
+    .hb-bg-grey-img {
       transform: translateY(-45px);
       border: 2px solid rgba(128, 128, 128, 0.102);
       border-radius: 50%;
       padding: 20px;
-      svg{
+      svg {
         width: 150px;
         height: 150px;
         fill: grey;
         opacity: 0.2;
+        
+        @media (max-width: 768px) {
+          width: 135px;
+        height: 135px;
+        }
+        @media (max-width: 576px) {
+          width: 110px;
+        height: 110px;
+        }
       }
     }
   }
@@ -42,7 +60,8 @@
   top: 0;
   left: 0;
   // background: rgba(255, 255, 255, 0.248);
-  padding:110px 20px;
+  padding: 110px 20px;
+
   .hb-data-align {
     h2 {
       font-size: 58px;
@@ -53,6 +72,23 @@
       color: white;
       @include kanit;
       margin-top: 20px;
+      @media (max-width: 1024px) {
+        font-size: 52px;
+      }
+      @media (max-width: 768px) {
+        font-size: 42px;
+        line-height: 52px;
+        margin-top: 75px;
+      }
+      @media (max-width: 576px) {
+        font-size: 36px;
+        line-height: 42px;
+      }
+      @media (max-width:430px) {
+        font-size: 27px;
+        line-height: 32px;
+
+      }
       span {
         position: relative;
         &:before {
@@ -64,6 +100,9 @@
           bottom: 8px;
           left: 10px;
           background: var(--primary-green);
+          @media (max-width:576px) {
+            bottom: 2px;
+          }
         }
       }
     }
@@ -73,6 +112,13 @@
       font-size: 15px;
       color: grey;
       @include kanit;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+      @media (max-width: 576px) {
+        max-width: 250px;
+        font-size: 13px;
+      }
     }
     button {
       margin-top: 40px;

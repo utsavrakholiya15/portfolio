@@ -75,7 +75,7 @@ export default function Projects() {
               img={shopImg}
               skills={"Redux, React"}
               desc={"A fully functional online shop with a smooth cart system, letting users add, remove, and review products effortlessly before making a purchase."}
-              url={"https://discovery--three.vercel.app/shop"}
+              url={"https://discovery-pi.vercel.app/shop"}
               title={"Shop and Cart"}
             />
           </div>

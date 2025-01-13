@@ -91,7 +91,7 @@ export default function Websites() {
               img={discoveryImg}
               skills={"Redux, React"}
               desc={" A school-focused homepage built with Sass and Redux, featuring a seamless shopping and cart functionality for an enhanced user experience."}
-              url={"https://discovery-pi  .vercel.app/"}
+              url={"https://discovery-pi.vercel.app/"}
               title={"Discovery"}
             />
           </div>

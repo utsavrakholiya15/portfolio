@@ -67,6 +67,9 @@
     width: 100%;
     height: 200px;
     border-radius: 9px;
+    @media (max-width:576px) {
+      height: 170px;
+    }
   }
   .websites-item-data {
     h4 {

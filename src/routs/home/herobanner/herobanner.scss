@@ -35,14 +35,18 @@
         height: 150px;
         fill: grey;
         opacity: 0.2;
-        
+
         @media (max-width: 768px) {
           width: 135px;
-        height: 135px;
+          height: 135px;
         }
         @media (max-width: 576px) {
           width: 110px;
-        height: 110px;
+          height: 110px;
+        }
+        @media (max-width: 430px) {
+          width: 70px;
+          height: 70px;
         }
       }
     }
@@ -84,10 +88,9 @@
         font-size: 36px;
         line-height: 42px;
       }
-      @media (max-width:430px) {
+      @media (max-width: 430px) {
         font-size: 27px;
         line-height: 32px;
-
       }
       span {
         position: relative;
@@ -100,7 +103,7 @@
           bottom: 8px;
           left: 10px;
           background: var(--primary-green);
-          @media (max-width:576px) {
+          @media (max-width: 576px) {
             bottom: 2px;
           }
         }

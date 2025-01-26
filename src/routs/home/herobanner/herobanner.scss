@@ -3,19 +3,14 @@
 .hb {
   background: var(--primary-black);
   height: calc(100vh - 70px);
-  @media (max-width: 1024px) {
-    margin: 0 auto;
-    max-width: 768px;
-  }
-  @media (max-width: 768px) {
-    max-width: 576px;
-    padding-inline: 20px;
+  @media (max-width: 576px) {
+    max-height: 91vh;
   }
 }
 
 .hb-bg-grid {
   display: grid;
-  grid-template-columns: 54% 1fr;
+  grid-template-columns: 65% 30% 1fr;
   height: 100%;
   .hb-bg-black {
     background: var(--primary-black);
@@ -25,6 +20,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 768px) {
+      background: transparent;
+    }
     .hb-bg-grey-img {
       transform: translateY(-45px);
       border: 2px solid rgba(128, 128, 128, 0.102);
@@ -34,9 +32,10 @@
         width: 150px;
         height: 150px;
         fill: grey;
-        opacity: 0.2;
+        opacity: 0.4;
 
         @media (max-width: 768px) {
+          display: none;
           width: 135px;
           height: 135px;
         }
@@ -64,9 +63,18 @@
   top: 0;
   left: 0;
   // background: rgba(255, 255, 255, 0.248);
-  padding: 110px 20px;
-
+  padding: 110px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: 768px) {
+    padding-block: 0;
+    text-align: center;
+  }
   .hb-data-align {
+    @media (max-width: 576px) {
+      margin-top: -70px;
+    }
     h2 {
       font-size: 58px;
       line-height: 60px;
@@ -75,22 +83,24 @@
       font-weight: 400;
       color: white;
       @include kanit;
-      margin-top: 20px;
       @media (max-width: 1024px) {
         font-size: 52px;
       }
       @media (max-width: 768px) {
         font-size: 42px;
         line-height: 52px;
-        margin-top: 75px;
       }
       @media (max-width: 576px) {
         font-size: 36px;
         line-height: 42px;
       }
       @media (max-width: 430px) {
-        font-size: 27px;
+        font-size: 25px;
         line-height: 32px;
+      }
+      @media (max-width: 320px) {
+        font-size: 23px;
+        line-height: 28px;
       }
       span {
         position: relative;
@@ -116,11 +126,22 @@
       color: grey;
       @include kanit;
       @media (max-width: 768px) {
+        margin-inline: auto;
+        line-height: 24px;
         font-size: 14px;
       }
       @media (max-width: 576px) {
         max-width: 250px;
+        line-height: 20px;
         font-size: 13px;
+      }
+      @media (max-width: 430px) {
+        font-size: 12px;
+        margin-top: 35px;
+      }
+      @media (max-width: 430px) {
+        font-size: 11px;
+        line-height: 16px;
       }
     }
     button {
@@ -137,6 +158,10 @@
       font-weight: 400;
       text-transform: uppercase;
       position: relative;
+      @media (max-width: 576px) {
+        padding: 6px 8px;
+        font-size: 11px;
+      }
       &:before {
         position: absolute;
         content: "";

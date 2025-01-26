@@ -11,8 +11,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
   h2 {
+    margin-bottom: 50px;
     font-size: 48px;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -24,7 +24,9 @@
       font-size: 38px;
     }
     @media (max-width: 576px) {
-      font-size: 32px;
+      font-size: 35px;
+      margin-bottom: 35px;
+
     }
   }
   button {
@@ -50,6 +52,9 @@
       height: 2px;
       background: var(--primary-green);
     }
+    @media (max-width:576px) {
+      display: none;
+    }
   }
 }
 
@@ -59,6 +64,9 @@
     gap: 40px;
     @media (max-width: 768px) {
       grid-template-columns: repeat(2,1fr);
+    }
+    @media (max-width: 576px) {
+      grid-template-columns: repeat(1,1fr);
     }
 }
 .projects-item{
@@ -77,19 +85,21 @@
             @include kanit;
             margin-top: 16px;
         }
-        ul{
-            margin-top: 4px;
-            margin-left: 16px;
-            list-style: disc;
-            li{
-                color: grey;
-                @include kanit;
-                font-size: 14px;
-                transition: .3s ease-in-out;
-                &:hover{
-                    text-decoration: underline;
-                }
+        ul {
+          margin-top: 4px;
+          list-style: none;
+          li {
+            color: grey;
+            @include kanit;
+            font-size: 12px;
+            transition: 0.3s ease-in-out;
+            @media (max-width:768px) {
+              font-size: 12px;
             }
+            &:hover {
+              text-decoration: underline;
+            }
+          }
         }
     }
 }

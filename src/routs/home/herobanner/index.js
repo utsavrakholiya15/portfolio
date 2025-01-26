@@ -19,6 +19,7 @@ export default function Herobanner() {
                 <IoLogoReact />
               </div>
             </div>
+            <div></div>
           </div>
           <div className="hb-data">
             <div className="hb-data-align">

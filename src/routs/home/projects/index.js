@@ -5,6 +5,7 @@ import quizImg from "../../../assets/IMAGEs/quiz.png";
 import ageCalImg from "../../../assets/IMAGEs/age-cal.png";
 import toDoImg from "../../../assets/IMAGEs/todo.png";
 import shopImg from "../../../assets/IMAGEs/shop.png";
+import invoiceAppImg from "../../../assets/IMAGEs/invoiceApp.png";
 export default function Projects() {
   const scrollToBottom = () => {
     window.scrollTo({
@@ -44,37 +45,55 @@ export default function Projects() {
           </div>
           <div className="projects-grid">
             <ProjectsItem
+              img={invoiceAppImg}
+              desc={
+                "An accurate invoices app to manage your invoice and due-dates with fully customization "
+              }
+              url={"https://myinvoice-app.vercel.app/"}
+              title={"Invoice App"}
+            />
+            <ProjectsItem
               img={quizImg}
               skills={"HTML SCSS React"}
-              desc={"A fun and interactive way to test your knowledge, built using HTML, CSS, JavaScript, and React to create a smooth and engaging quiz experience."}
+              desc={
+                "A fun and interactive way to test your knowledge, built using HTML, CSS, JavaScript, and React to create a smooth and engaging quiz experience."
+              }
               url={"https://utsav-rakholiya-projects.vercel.app/quiz"}
               title={"Quiz App"}
             />
             <ProjectsItem
               img={qaImg}
               skills={"HTML SCSS React"}
-              desc={"A simple yet effective way to explore JavaScript concepts, featuring interactive question-and-answer dropdowns for easy learning."}
+              desc={
+                "A simple yet effective way to explore JavaScript concepts, featuring interactive question-and-answer dropdowns for easy learning."
+              }
               url={"https://utsav-rakholiya-projects.vercel.app/"}
               title={"Dropdowns"}
             />
             <ProjectsItem
               img={ageCalImg}
               skills={"Tailwind, React"}
-              desc={" An accurate and easy-to-use age calculator that helps you determine your exact age down to the days, months, and years."}
+              desc={
+                " An accurate and easy-to-use age calculator that helps you determine your exact age down to the days, months, and years."
+              }
               url={"https://utsav-rakholiya-projects.vercel.app/age-cal"}
               title={"Age Calculator"}
             />
             <ProjectsItem
               img={toDoImg}
               skills={"Tailwind, React"}
-              desc={"A simple yet effective to-do list app that helps you organize tasks, set priorities, and stay productive with a clean and intuitive interface."}
+              desc={
+                "A simple yet effective to-do list app that helps you organize tasks, set priorities, and stay productive with a clean and intuitive interface."
+              }
               url={"https://utsav-rakholiya-projects.vercel.app/todo"}
               title={"To Do List"}
             />
             <ProjectsItem
               img={shopImg}
               skills={"Redux, React"}
-              desc={"A fully functional online shop with a smooth cart system, letting users add, remove, and review products effortlessly before making a purchase."}
+              desc={
+                "A fully functional online shop with a smooth cart system, letting users add, remove, and review products effortlessly before making a purchase."
+              }
               url={"https://discovery-pi.vercel.app/shop"}
               title={"Shop and Cart"}
             />

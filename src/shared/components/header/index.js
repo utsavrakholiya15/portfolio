@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { RiVercelFill } from "react-icons/ri";
 import { SlEnvolopeLetter } from "react-icons/sl";
 import { useNavigate } from "react-router-dom";
-import resumePDF from "../../../assets/PDFs/utsav-rakholiya-resume.pdf";
+import resumePDF from "../../../assets/PDFs/utsav_rakholiya-resume.pdf";
 export default function Header() {
   const handleOnUrl = (url) => {
     if (url) {

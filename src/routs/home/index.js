@@ -9,8 +9,8 @@ export default function Home() {
     <div>
         <Herobanner/>
         <Skills/>
-        <Projects/>
         <Websites/>
+        <Projects/>
     </div>
   )
 }

@@ -53,13 +53,6 @@ export default function Websites() {
               title={"Biograph"}
             />
             <WebsiteItem
-              img={siroImg}
-              skills={"React Sass"}
-              desc={"Experience the pinnacle of luxury at Dubai's premier hotel destination."}
-              url={"https://siro-hotels.vercel.app/"}
-              title={"Siro"}
-            />
-            <WebsiteItem
               img={findmyaitoolImg}
               skills={"React Sass"}
               desc={"Explore top AI tools with a sleek and stunning design. 🚀"}
@@ -86,13 +79,6 @@ export default function Websites() {
               desc={"A sleek, responsive homepage built with Tailwind CSS, providing easy access to hospital services, appointments, and healthcare information."}
               url={"https://health-iq-nu.vercel.app/"}
               title={"Health IQ"}
-            />
-            <WebsiteItem
-              img={discoveryImg}
-              skills={"Redux, React"}
-              desc={" A school-focused homepage built with Sass and Redux, featuring a seamless shopping and cart functionality for an enhanced user experience."}
-              url={"https://discovery-pi.vercel.app/"}
-              title={"Discovery"}
             />
           </div>
         </div>

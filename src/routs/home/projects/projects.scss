@@ -30,6 +30,7 @@
     }
   }
   button {
+    
     height: 35px;
     padding: 6px 10px;
     background: var(--primary-black);
@@ -43,6 +44,8 @@
     font-weight: 400;
     text-transform: uppercase;
     position: relative;
+    margin-bottom: 50px;
+    
     &:before {
       position: absolute;
       content: "";

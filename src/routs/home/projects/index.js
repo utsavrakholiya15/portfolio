@@ -94,7 +94,7 @@ export default function Projects() {
               desc={
                 "A fully functional online shop with a smooth cart system, letting users add, remove, and review products effortlessly before making a purchase."
               }
-              url={"https://discovery-pi.vercel.app/shop"}
+              url={"https://discovery-utsav-rakholiyas-projects.vercel.app/shop"}
               title={"Shop and Cart"}
             />
           </div>
